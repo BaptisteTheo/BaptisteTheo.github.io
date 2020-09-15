@@ -126,7 +126,7 @@ The $ is unusuall and user . These are variables set by the computer, or set the
 If you edit these variables you can change certain processes on your computer. 
 ```bash
 shiba2@nootnoot:/home/shiba1$ echo $USER
-shiba2
+
 shiba2@nootnoot:/home/shiba1$
 ```
 You can set a variable with "="
@@ -149,3 +149,18 @@ shiba2@nootnoot:/home/shiba1$ echo $HOME
 ### "|"
 | Stand for pipe, It's a unique operators that allows you to take the output of a command and use it as input 
 for a second command.
+
+### Task 21
+
+To get the password for shiba 3 we need to create the variable "test1234" and set equal to the $USER variable.
+
+Let's create the variable test1234 and set the value with the variable $USER
+```bash
+shiba2@nootnoot:~$ test1234=$USER
+shiba2@nootnoot:~$ echo $test1234
+shiba2
+```
+
+Run the binary file to get the password for shiba3 !
+
+
