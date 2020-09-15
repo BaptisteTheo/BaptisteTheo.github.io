@@ -84,10 +84,35 @@ Or a environnement variables with
 ```bash
 export <varname>==<value>
 ```
+You can concatenate a new variable with an other
+```bash
+var1={user}Oaken
+echo $var1
+rootOaken
+```
+
+### set 
+List the local variable.
+
+### unset 
+Cancel the definition of a local variable.
+
+### $$
+Give you the pid of the current processus.
+
+### $! 
+Give you the pid in the last processus in the background.
 
 ### |
 | Stand for pipe, it's a unique operator that allows you to take the output of a command and use it as input 
 for a second command.
+
+### kill
+Send a signal to a current process.
+
+### ``
+Will execute the command, not a string. 
+
 
 ## Section 3: Advanced File Operations
 
