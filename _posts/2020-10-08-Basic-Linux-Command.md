@@ -2,7 +2,7 @@
 layout: post
 title: Linux Basic Commands
 author: Baptiste
-date: 2020-18-04
+date: 2020-04-18
 categories: [Note, Linux, Commands]
 tags: [Linux, Note, Basics] 
 math: true
@@ -97,11 +97,29 @@ List the local variable.
 ### unset 
 Cancel the definition of a local variable.
 
+### :-
+```bash
+echo ${var:-Banane}
+```
+If the var is empty, put the string "Banane" in it. 
+
+### :=
+Affect and execute.
+```bash cat file
+var=KIWI
+echo ${var:=BANANE}
+root@kali: ./file
+KIWI
+```
+
 ### $$
 Give you the pid of the current processus.
 
 ### $! 
 Give you the pid in the last processus in the background.
+
+### $#
+Give the number of arguments given in the file.
 
 ### |
 | Stand for pipe, it's a unique operator that allows you to take the output of a command and use it as input 
@@ -113,6 +131,9 @@ Send a signal to a current process.
 ### ``
 Will execute the command, not a string. 
 
+### shift 
+Pass to the next arguments.
+You can give -n arguments after the shift. 
 
 ## Section 3: Advanced File Operations
 
