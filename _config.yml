@@ -16,6 +16,7 @@ description: >-                        # used by seo meta and the atom feed
   A minimal blog.
 
 # Replace with the website url, e.g. 'https://username.github.io'
+baseurl : "/BaptisteTheo.github.io"
 url: 'https://BaptisteTheo.github.io'
 
 author: Baptiste Theobald                  # change to your full name
