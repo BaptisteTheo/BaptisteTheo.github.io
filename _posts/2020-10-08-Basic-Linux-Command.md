@@ -49,7 +49,7 @@ cat
 ```bash
 ./file
 ```
-(/root/Documents/Blue/in.png)
+
 
 ### Section 4: Linux Operators
 
