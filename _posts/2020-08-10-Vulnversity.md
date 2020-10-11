@@ -1,6 +1,7 @@
 --- 
 layout : post
-title : TryHackMe Vulnversity 
+title : TryHackMe Vulnversity
+image: /assets/img/Vuln/main.png 
 author: Edwards
 date: 2020-10-08
 categories: [CTF, TryHackMe]
@@ -42,18 +43,17 @@ launch Dirbuster with :
 ```bash
 dirbuster
 ```
-![image](/assets/img/Vuln/config.png)
-
 My configuration for the research.
 - On the target url : The ip adress of the website with the port.
 - File with list of dirs.files : the list avaible on the /usr/share/wordlists/dirbuster (I usually pick the medium one ) 
 - File extension : php,js,html,htm (Basic file extensions on website)
 
-![image](/assets/img/Vuln/result.png)
+![image](/assets/img/Vuln/config.png)
 
 I found something interesting, the website got an internal/uploads page avaible. 
 Let's check this page and what messy things we can do.
 
+![image](/assets/img/Vuln/result.png)
 
 As you can see, we can uploads file. Which is very good for us.
 
@@ -63,7 +63,6 @@ Try to upload some files with different extensions.
 Apparently they don't like php file.
 
 ![image](/assets/img/Vuln/php.png)
-
 _After a tentative of php uploading_
 
 ### Section 3 : BurpSuite 
@@ -77,6 +76,7 @@ Send this to intruder with "right-click" :
 ![image](/assets/img/Vuln/proxy.png)
 
 I created a list with php extensions : 
+
 ![image](/assets/img/Vuln/ext.png)
 
 At payload options, load your list : 
@@ -164,7 +164,7 @@ WantedBy=multi-user.target' > $var
 What we have just done is basically take advantage of the systemctl to create a system service and run it as root.
 The created service will execute "BASH" then read the flag and redirect the ouptu to our flag file in /tmp.
 
-To have the flag you just have to move to : 
+To have the flag you just have to cat the output file : 
 ```bash
 cat /tmp/output 
 ```

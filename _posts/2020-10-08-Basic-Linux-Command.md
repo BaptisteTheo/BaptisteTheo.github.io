@@ -2,7 +2,8 @@
 layout: post
 title: Linux Basic Commands
 author: Baptiste
-date: 2020-04-18
+image: /assets/img/Blue/tux.png
+date: 2020-09-20
 categories: [Note, Linux, Commands]
 tags: [Linux, Note, Basics] 
 math: true
