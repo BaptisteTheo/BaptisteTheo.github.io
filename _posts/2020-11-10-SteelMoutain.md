@@ -178,6 +178,11 @@ We are all set, let's launch the python exploit (two times)!
 - First time is for putting the netcat binary to the system.
 - The second to execute our payload and gain a callback.
 
+The syntaxe is : 
+```bash
+python exploit.py <target_ip> <target_port>
+```
+
 ![image](/assets/img/steel/exploitpython.png)
 
 - As you can see I launched the exploit two times 
@@ -206,6 +211,7 @@ We also know that as the user bill we can write data and create files.
 ![image](/assets/img/steel/return.png)
 
 We will do the same as before, upload our Advanced.exe file and listen on a other netcat port.
+
 Again, let's download the msfvenom payload.
 
 ![image](/assets/img/steel/msfvenom1.png)
